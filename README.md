@@ -1,4 +1,4 @@
-# Cafe Gravity
+# Cafe
 A program for cafe cost calculations.
 
 یک برنامه ساده برای کافه بردگیم که بر اساس هر ساعت بازی، مبلغ مشخصی دریافت میکنند
