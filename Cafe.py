@@ -23,11 +23,14 @@ def clock_show():
     print(f"{georgian} Equivalent to {persian}\n")
 
 def waiting():
-    widgets = ['Waiting: ', progressbar.AnimatedMarker()]
+    widgets = ['Processing: ', progressbar.AnimatedMarker(), ' ', progressbar.Percentage(), ' ',
+               progressbar.Bar(marker='=', left='[', right=']'), ' ']
     bar = progressbar.ProgressBar(widgets=widgets).start()
     for i in range(10):
         time.sleep(0.1)
         bar.update(i)
+    bar.finish()
+
 
 def exit_cafe():
     print("\nPress Enter to exit...")
